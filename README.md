@@ -21,7 +21,3 @@ Shared [Renovate](https://docs.renovatebot.com) preset for my repos
 ```
 
 Automerge only happens on repos with CI: Renovate won't merge a PR without passing checks
-
-## License
-
-MIT
