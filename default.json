@@ -1,0 +1,24 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": ["config:recommended", ":disableDependencyDashboard"],
+	"schedule": ["before 6am on monday"],
+	"minimumReleaseAge": "3 days",
+	"lockFileMaintenance": { "enabled": true, "automerge": true },
+	"postUpdateOptions": ["gomodTidy"],
+	"packageRules": [
+		{
+			"description": "Non-major updates land as one weekly PR, merged once CI passes",
+			"matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+			"groupName": "non-major dependencies",
+			"automerge": true
+		},
+		{
+			"description": "My own packages and workflows ship right away and keep every repo on the same version",
+			"matchPackageNames": ["@dragunovartem99/**", "html-diagram", "vue-pgn-viewer", "99.css", "dragunovartem99/pipes"],
+			"groupName": "own packages",
+			"schedule": ["at any time"],
+			"minimumReleaseAge": null,
+			"automerge": true
+		}
+	]
+}
