@@ -13,13 +13,6 @@
 			"automerge": true
 		},
 		{
-			"description": "Minor updates below 1.0 can break (semver 0.x), so they get their own PR and wait for review",
-			"matchUpdateTypes": ["minor"],
-			"matchCurrentVersion": "<1.0.0",
-			"groupName": "0.x minor dependencies",
-			"automerge": false
-		},
-		{
 			"description": "My own packages and workflows ship right away and keep every repo on the same version",
 			"matchPackageNames": ["@dragunovartem99/**", "html-diagram", "vue-pgn-viewer", "99.css", "dragunovartem99/pipes"],
 			"groupName": "own packages",
