@@ -21,6 +21,11 @@
 			"automerge": true
 		},
 		{
+			"description": "TypeScript 7 ships without the compiler API that typescript-eslint and vue-tsc need; revisit after 7.1",
+			"matchPackageNames": ["typescript"],
+			"allowedVersions": "<7"
+		},
+		{
 			"description": "Major updates always wait for review, my own packages included",
 			"matchUpdateTypes": ["major"],
 			"automerge": false
