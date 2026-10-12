@@ -8,6 +8,7 @@ Shared [Renovate](https://docs.renovatebot.com) preset for my repos
 - My own packages (`@dragunovartem99/*`, `html-diagram`, `vue-pgn-viewer`, `99.css`) and
   [pipes](https://github.com/dragunovartem99/pipes) workflows update immediately and merge on green CI,
   except major versions, which wait for review
+- `typescript` held below 7 until the ecosystem catches up
 - Lockfile maintenance and `go mod tidy`
 
 ## Usage
