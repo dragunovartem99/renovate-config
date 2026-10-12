@@ -3,7 +3,7 @@
 	"extends": ["config:recommended", ":disableDependencyDashboard"],
 	"schedule": ["before 6am on monday"],
 	"minimumReleaseAge": "3 days",
-	"lockFileMaintenance": { "enabled": true, "automerge": true },
+	"lockFileMaintenance": { "enabled": true, "automerge": true, "minimumReleaseAge": null },
 	"postUpdateOptions": ["gomodTidy"],
 	"packageRules": [
 		{
